@@ -14,6 +14,14 @@ function App() {
       {/* NAV */}
       <nav className="nav">
         <h2>Zenith Labs</h2>
+
+ <ul className="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
         <a
           href="https://wa.me/5493705013558?text=Hello%20I%20want%20to%20improve%20my%20website"
           className="btn"
@@ -24,7 +32,7 @@ function App() {
 
       <div className="container">
         {/* HERO */}
-        <section className="hero">
+        <section   id="home" className="hero">
           <motion.div
             className="hero-box"
             initial={{ opacity: 0, y: 40 }}
@@ -48,7 +56,7 @@ function App() {
         </section>
 
         {/* SERVICES */}
-        <section className="section">
+        <section  id="services" className="section">
           <h2>What We Do</h2>
 
           <div className="grid">
@@ -198,7 +206,7 @@ function App() {
 </motion.div> */}
 
         {/* PROJECTS */}
-        <section className="section">
+        <section id="projects"  className="section">
           <h2>Selected Work</h2>
 
           <div className="grid">
@@ -414,6 +422,139 @@ CARTELES DE PRECIOS MAS LINDOS Y USAMOS ESOS QUE ESTAN MAS ABAJO NO EN COMENTARI
           </a>
         </div>
       </div>
+
+
+<section className="contact-section" id="contact">
+
+    <div className="contact-title">
+        <h2>Let's Build Your Website</h2>
+
+        <p>
+            Tell us about your project and we'll get back to you within 24 hours.
+        </p>
+    </div>
+
+    <div className="contact-container">
+
+        {/* FORMULARIO */}
+
+        <div className="contact-card">
+
+            <form className="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                />
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                />
+
+                <input
+                    type="tel"
+                    placeholder="WhatsApp"
+                />
+
+                <textarea
+                    placeholder="Tell us about your project..."
+                    rows="7"
+                    required
+                ></textarea>
+
+                <button type="submit" className="btn">
+                    Get a Free Quote
+                </button>
+
+            </form>
+
+        </div>
+
+        {/* CARD DERECHA */}
+
+        <div className="info-card">
+
+            <h3>What Happens Next?</h3>
+
+            <div className="step">
+                <span>📩</span>
+                <p>We review your request.</p>
+            </div>
+
+            <div className="step">
+                <span>💬</span>
+                <p>We contact you within 24 hours.</p>
+            </div>
+
+            <div className="step">
+                <span>💡</span>
+                <p>We discuss your goals.</p>
+            </div>
+
+            <div className="step">
+                <span>📄</span>
+                <p>We send you a custom quote.</p>
+            </div>
+
+            <div className="step">
+                <span>🚀</span>
+                <p>We start building your website.</p>
+            </div>
+
+            <hr />
+
+            <ul>
+
+                <li>✅ Free consultation</li>
+
+                <li>✅ No obligation</li>
+
+                <li>⚡ Fast response</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer className="footer">
+  <div className="footer-content">
+    <div className="footer-brand">
+      <h3>Zenith Labs</h3>
+      <p>
+        We create modern, high-converting websites that help businesses
+        attract more clients and grow online.
+      </p>
+    </div>
+
+    <div className="footer-contact">
+      <h4>Get in Touch</h4>
+
+      <a
+        href="https://wa.me/5493705013558?text=Hello%20I%20want%20to%20start%20a%20project"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+
+      <p>Available Monday – Friday</p>
+      <p>Response within 24 hours</p>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <p>© 2026 Zenith Labs. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
     </>
   );
 }
